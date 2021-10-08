@@ -34,7 +34,7 @@ export DEBIAN_FRONTEND=noninteractive
 contrib/scripts/install_prereq install
 ./configure --with-pjproject-bundled
 make menuselect
-make
+make -j4
 make install
 make config
 make samples
