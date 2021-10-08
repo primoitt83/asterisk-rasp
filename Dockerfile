@@ -6,8 +6,6 @@ COPY ${PWD}/make.sh /
  
 COPY ${PWD}/entrypoint.sh /entrypoint.sh
 
-RUN chmod +x /entrypoint.sh && /entrypoint.sh
- 
 RUN chmod +x /make.sh && /make.sh
  
 FROM debian:buster-slim as final
@@ -29,6 +27,8 @@ COPY --from=builder /entrypoint.sh /entrypoint.sh
 
 RUN mkdir /var/run/asterisk
  
+RUN chmod +x /entrypoint.sh
+
 EXPOSE 5060/udp 5060/tcp 8088/tcp 5038/tcp
  
 VOLUME /var/lib/asterisk/sounds /var/lib/asterisk/keys /var/lib/asterisk/phoneprov /var/spool/asterisk /var/log/asterisk /etc/asterisk
