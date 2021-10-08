@@ -30,6 +30,7 @@ apt-get install -y \
 wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz
 tar -xvf asterisk-*
 cd asterisk-16.21.0
+export DEBIAN_FRONTEND=noninteractive
 contrib/scripts/install_prereq install
 ./configure --with-pjproject-bundled
 make menuselect
