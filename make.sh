@@ -5,6 +5,7 @@ apt-get update
 apt-get install -y \
   build-essential \
   curl \
+  libjack-dev \
   git \
   gzip \
   libedit-dev \
@@ -35,7 +36,6 @@ apt-get install -y \
   libsybdb5 \
   libiksemel-dev \
   libosptk-dev \
-  libjack-dev \
   libcodec2-dev \
   libneon27-dev \
   libgmime-3.0-dev \
