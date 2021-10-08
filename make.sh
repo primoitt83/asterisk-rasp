@@ -29,7 +29,7 @@ apt-get install -y \
 #git clone https://github.com/asterisk/asterisk.git /asterisk
 wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz
 tar -xvf asterisk-*
-cd /asterisk-*
+cd asterisk-16.21.0
 contrib/scripts/install_prereq install
 ./configure --with-pjproject-bundled
 make menuselect
@@ -41,5 +41,5 @@ make samples
 cd /tmp
 wget https://downloads.digium.com/pub/telephony/codec_opus/asterisk-16.0/x86-64/codec_opus-16.0_current-x86_64.tar.gz
 tar xvzf codec_opus-*
-cp codec_opus-*/*.so /usr/lib/asterisk/modules/
-cp codec_opus-*/codec_opus_config-en_US.xml /var/lib/asterisk/documentation/thirdparty
+cp codec_opus-16.0_1.3.0-x86_64/*.so /usr/lib/asterisk/modules/
+cp codec_opus-16.0_1.3.0-x86_64/codec_opus_config-en_US.xml /var/lib/asterisk/documentation/thirdparty
