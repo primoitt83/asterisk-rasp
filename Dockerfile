@@ -5,6 +5,8 @@ LABEL maintainer="paul.bargewell@opusvl.com"
 COPY ${PWD}/make.sh /
  
 COPY ${PWD}/entrypoint.sh /entrypoint.sh
+
+RUN chmod +x /entrypoint.sh && /entrypoint.sh
  
 RUN chmod +x /make.sh && /make.sh
  
@@ -13,7 +15,7 @@ FROM debian:buster-slim as final
 COPY ${PWD}/install.sh /install.sh
  
 RUN chmod +x /install.sh && /install.sh
- 
+
 COPY --from=builder --chown=asterisk:asterisk /usr/lib/libasterisk* /usr/lib/
 COPY --from=builder --chown=asterisk:asterisk /usr/lib/asterisk/ /usr/lib/asterisk/
 COPY --from=builder --chown=asterisk:asterisk /var/spool/asterisk/ /var/spool/asterisk/
