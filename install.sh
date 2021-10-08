@@ -19,7 +19,30 @@ apt-get install -y \
   supervisor \
   unixodbc \
   unixodbc-dev \
-  uuid-dev
+  uuid-dev \
+  libxslt-dev \
+  liburiparser-dev \
+  xmlstarlet \
+  libopus-dev \
+  libopusfile-dev \
+  libcurl4 \
+  libcurl4-openssl-dev \
+  libsybdb5 \
+  libiksemel-dev \
+  libosptk-dev \
+  libcodec2-dev \
+  libneon27-dev \
+  libgmime-3.0-dev \
+  libradcli-dev \
+  libspeex-dev \
+  libgsm1-dev \
+  libvorbisfile3 \
+  libradcli-dev \
+  libunbound-dev \
+  libspandsp-dev \
+  liblua5.2-dev \
+  libsnmp-dev \
+  libjack-dev
  
 apt-get autoclean
  
