@@ -24,7 +24,31 @@ apt-get install -y \
   unixodbc \
   unixodbc-dev \
   uuid-dev \
-  wget
+  wget \
+  libxslt-dev \
+  liburiparser-dev \
+  xmlstarlet \
+  libopus-dev \
+  libopusfile-dev \
+  libcurl4 \
+  libcurl4-openssl-dev \
+  libsybdb5 \
+  libiksemel-dev \
+  libosptk-dev \
+  libjack-dev \
+  libcodec2-dev \
+  libneon27-dev \
+  libgmime-3.0-dev \
+  libradcli-dev \
+  libspeex-dev \
+  libgsm1-dev \
+  libvorbisfile3 \
+  libradcli-dev \
+  libunbound-dev \
+  libspandsp-dev \
+  liblua5.2-dev \
+  libsnmp-dev
+  
  
 #git clone https://github.com/asterisk/asterisk.git /asterisk
 wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz
@@ -39,8 +63,8 @@ make install
 make config
 make samples
  
-cd /tmp
-wget https://downloads.digium.com/pub/telephony/codec_opus/asterisk-16.0/x86-64/codec_opus-16.0_current-x86_64.tar.gz
-tar xvzf codec_opus-*
-cp codec_opus-16.0_1.3.0-x86_64/*.so /usr/lib/asterisk/modules/
-cp codec_opus-16.0_1.3.0-x86_64/codec_opus_config-en_US.xml /var/lib/asterisk/documentation/thirdparty
+#cd /tmp
+#wget https://downloads.digium.com/pub/telephony/codec_opus/asterisk-16.0/x86-64/codec_opus-16.0_current-x86_64.tar.gz
+#tar xvzf codec_opus-*
+#cp codec_opus-16.0_1.3.0-x86_64/*.so /usr/lib/asterisk/modules/
+#cp codec_opus-16.0_1.3.0-x86_64/codec_opus_config-en_US.xml /var/lib/asterisk/documentation/thirdparty

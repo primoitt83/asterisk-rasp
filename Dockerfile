@@ -26,6 +26,8 @@ COPY --from=builder --chown=asterisk:asterisk /etc/init.d/asterisk /etc/init.d/
 COPY --from=builder --chown=asterisk:asterisk /var/lib/asterisk/ /var/lib/asterisk/
  
 COPY --from=builder /entrypoint.sh /entrypoint.sh
+
+RUN mkdir /var/run/asterisk
  
 EXPOSE 5060/udp 5060/tcp 8088/tcp 5038/tcp
  
