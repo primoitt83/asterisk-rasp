@@ -33,7 +33,10 @@ cd asterisk-16.21.0
 export DEBIAN_FRONTEND=noninteractive
 contrib/scripts/install_prereq install
 ./configure --with-pjproject-bundled
-make menuselect
+make menuselect.makeopts
+menuselect/menuselect --disable-category MENUSELECT_CDR menuselect.makeopts
+menuselect/menuselect --disable-category MENUSELECT_CEL menuselect.makeopts
+menuselect/menuselect --enable MOH-OPSOUND-WAV menuselect.makeopts
 make -j4
 make install
 make config
