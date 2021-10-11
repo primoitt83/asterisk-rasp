@@ -29,7 +29,7 @@ apt-get install -y \
 #git clone https://github.com/asterisk/asterisk.git /asterisk
 wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz
 tar -xvf asterisk-*
-cd asterisk-16.21.0
+cd asterisk-16.21.1
 export DEBIAN_FRONTEND=noninteractive
 contrib/scripts/install_prereq install
 ./configure --with-pjproject-bundled
