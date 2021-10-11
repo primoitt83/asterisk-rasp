@@ -43,7 +43,9 @@ apt-get install -y \
   liblua5.2-dev \
   libsnmp-dev \
   libjack-dev
-   
+
+apt-get install -y libresample1-dev libical-dev libspeexdsp-dev 
+
 apt-get autoclean
  
 useradd asterisk
