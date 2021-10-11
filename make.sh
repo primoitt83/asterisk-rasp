@@ -24,10 +24,7 @@ apt-get install -y \
   unixodbc \
   unixodbc-dev \
   uuid-dev \
-  wget \
-  libresample1-dev \
-  libical-dev \
-  libspeexdsp-dev 
+  wget
  
 #git clone https://github.com/asterisk/asterisk.git /asterisk
 wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16-current.tar.gz
