@@ -37,6 +37,10 @@ make menuselect.makeopts
 menuselect/menuselect --disable-category MENUSELECT_CDR menuselect.makeopts
 menuselect/menuselect --disable-category MENUSELECT_CEL menuselect.makeopts
 menuselect/menuselect --enable MOH-OPSOUND-WAV menuselect.makeopts
+menuselect/menuselect --disable-category MENUSELECT_UTILS menuselect.makeopts
+menuselect/menuselect --disable astcanary --disable astdb2sqlite3 --disable astdb2bdb menuselect.makeopts
+menuselect/menuselect --disable CORE-SOUNDS-EN-GSM menuselect.makeopts
+menuselect/menuselect --enable CORE-SOUNDS-EN-WAV menuselect.makeopts
 make -j4
 make install
 make config
